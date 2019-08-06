@@ -1,0 +1,187 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9858742000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I open \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 7
+                }
+              ],
+              "location": "Background.i_open(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2836250200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I browse to \"https://www.demo.iscripts.com/multicart/demo/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.demo.iscripts.com/multicart/demo/index.php\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Background.i_browse_to(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-06T01:17:46.886Z",
+        "line": 13,
+        "name": "Verify Search",
+        "description": "",
+        "id": "home-page-test;verify-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat homePageTest.HomePageFeature.i_should_see(HomePageFeature.java:49)\r\n\tat ✽.I should see \"SEARCH\"(file:src/test/resource/multicartTest.feature:15)\r\n",
+              "duration": 3010215100,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "I should see \"SEARCH\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SEARCH\"",
+                  "offset": 13
+                }
+              ],
+              "location": "HomePageFeature.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8547124301,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I open \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 7
+                }
+              ],
+              "location": "Background.i_open(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2756960500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I browse to \"https://www.demo.iscripts.com/multicart/demo/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.demo.iscripts.com/multicart/demo/index.php\"",
+                  "offset": 12
+                }
+              ],
+              "location": "Background.i_browse_to(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-06T01:18:02.639Z",
+        "line": 17,
+        "name": "Successful Sign Up",
+        "description": "",
+        "id": "home-page-test;successful-sign-up",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat homePageTest.HomePageFeature.i_click_logIn_and_signUp(HomePageFeature.java:56)\r\n\tat ✽.I click logIn and signUp(file:src/test/resource/multicartTest.feature:19)\r\n",
+              "duration": 1576301,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "I click logIn and signUp",
+            "match": {
+              "location": "HomePageFeature.i_click_logIn_and_signUp()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 734199,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I enter all userInformation and click createAccount",
+            "match": {
+              "location": "HomePageFeature.i_enter_all_userInformation_and_click_createAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 478800,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I should see \"Mr. AKM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mr. AKM\"",
+                  "offset": 13
+                }
+              ],
+              "location": "HomePageFeature.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Test",
+    "description": "As a Multicart user I should able to \nlaunch Multicart Web Page, see Home Page \nFeatures and Sign Up",
+    "id": "home-page-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resource/multicartTest.feature",
+    "tags": []
+  }
+]
