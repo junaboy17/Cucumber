@@ -45,8 +45,8 @@ public class HomePageFeature extends DriverBase {
 	@Then("I should see {string}")
 	public void i_should_see(String desiredText) {
 		//assertEquals("FAILED : Profile Name not Matched!!!",home.validateSearch(desiredText),true);
-		assertEquals("FAILED : Profile Name not Matched!!!", home.validateSearch(desiredText));
-		assertEquals("FAILED : Profile Name not Matched!!!", home.validateSearch(desiredText),true);
+		//assertEquals("FAILED : Profile Name not Matched!!!",home.validateSearch(desiredText),true);
+		home.validateSearch(desiredText);
 		util.wait(3000);
 		driver.close();
 	}
