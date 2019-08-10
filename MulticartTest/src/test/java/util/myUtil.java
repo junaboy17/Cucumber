@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import driverFactory.DriverBase;
 
 public class myUtil extends DriverBase {
-	
+	public String actual;
 	
 	public boolean textValidation(String desiredText, String locators) {
 		try {

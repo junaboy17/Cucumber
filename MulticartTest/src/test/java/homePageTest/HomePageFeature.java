@@ -24,7 +24,7 @@ public class HomePageFeature extends DriverBase {
 	HomePageXPath xPath = new HomePageXPath();
 	myUtil util = new myUtil();
 	RegistrationPageFunctions reg = new RegistrationPageFunctions();
-	String User = "akm6";
+	String User = "akm11";
 
 
 	@Given("I open {string}")
@@ -45,9 +45,24 @@ public class HomePageFeature extends DriverBase {
 	@Then("I should see {string}")
 	public void i_should_see(String desiredText) {
 		//assertEquals("FAILED : Profile Name not Matched!!!",home.validateSearch(desiredText),true);
-		//assertEquals("FAILED : Profile Name not Matched!!!",home.validateSearch(desiredText),true);
+		//assertEquals("FAILED : Profile Name not Matched!!!",home.validateSearch(desiredText);
+		//assertEquals("Pass", desiredText, util.actual);
+		//assertEquals(util.textValidation(desiredText, xPath.searchTextBox),true);
+
 		home.validateSearch(desiredText);
-		util.wait(3000);
+		util.wait(1000);
+		driver.close();
+	}
+	
+	@Then("I should locate {string}")
+	public void i_should_locate(String desiredText) {
+		//assertEquals("FAILED : Profile Name not Matched!!!",home.validateSearch(desiredText),true);
+		//assertEquals("FAILED : Profile Name not Matched!!!",home.validateSearch(desiredText);
+		//assertEquals("Pass", desiredText, util.actual);
+		//assertEquals(util.textValidation(desiredText, xPath.searchTextBox),true);
+
+		home.validateUser(desiredText);
+		util.wait(1000);
 		driver.close();
 	}
 	

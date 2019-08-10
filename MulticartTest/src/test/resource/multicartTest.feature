@@ -18,6 +18,6 @@ Scenario:   Successful Sign Up
 
 		When I click logIn and signUp	
 		And I enter all userInformation and click createAccount
-		Then I should see "Mr. AKM"
+		Then I should locate "Mr. AKM"
 		
 		

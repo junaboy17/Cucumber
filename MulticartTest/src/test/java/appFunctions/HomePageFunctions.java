@@ -1,6 +1,7 @@
 package appFunctions;
 
 import org.openqa.selenium.By;
+import static org.junit.Assert.*;
 
 import driverFactory.DriverBase;
 import util.myUtil;
@@ -13,11 +14,15 @@ HomePageXPath xPath = new HomePageXPath();
 
 	
 public void validateSearch(String desiredText) {
-	util.textValidation(desiredText, xPath.searchTextBox);
+	//util.textValidation(desiredText, xPath.searchTextBox);
+	assertEquals("Test failed",util.textValidation(desiredText, xPath.searchTextBox),false);
+
 }
 	
 public void validateUser(String desiredText) {
-	util.textValidation(desiredText, xPath.userName);
+	//util.textValidation(desiredText, xPath.userName);
+	assertEquals("Test failed", util.textValidation(desiredText, xPath.userName),false);
+
 }
 
 public void clickLogIn() {

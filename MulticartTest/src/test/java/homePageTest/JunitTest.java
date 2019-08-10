@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		//Location of the step defination
 		glue = {"homePageTest"},
 		//Which tags to runs test for 
-		tags = {"~@ignore"},
+		tags = {"not @ignore"},
 		//format such as pretty
 		plugin = {"pretty","json:target/cucumber-resports.json", "html:target/cucumber-resports"}, monochrome = true)
 
